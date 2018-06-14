@@ -1,0 +1,65 @@
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(light\ blue\ swirl.jpg);
+    background-size: cover;
+    font-family: sans-serif
+}
+
+.title
+{
+    text-align: center;
+    padding: 50px 0 20px;
+}
+.title h1
+{
+    margin : 0;
+    padding: 0;
+    color: #3e5d75;
+    text-transform: uppercase;
+    font-size:35px;
+}
+.container
+{
+    width:50%;
+    height:400px;
+    background: #370a4496;
+    margin:0 auto;
+    border: 2px solid #ffffff69;
+    box-shadow: 0 15px 40px rgba(0, 2, 0, .8);
+}
+
+.container .left
+{
+    float: left;
+    width: 50%;
+    height: 400px;
+    background:url(Andela.jpg);
+    background-size:cover;
+    box-sizing: border-box;
+}
+.container .right
+{
+    float: right;
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+
+}
+.formbox
+{
+    width: 100%;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    height:400px;
+    background: #ffffff69;
+}
+.formbox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight:bold;
+
+}
