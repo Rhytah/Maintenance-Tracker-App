@@ -48,18 +48,69 @@ body
     box-sizing: border-box;
 
 }
-.formbox
+.formBox
 {
     width: 100%;
     padding: 80px 40px;
     box-sizing: border-box;
-    height:400px;
+    height:800px;
     background: #ffffff69;
 }
-.formbox p
+.formBox p
 {
     margin: 0;
     padding: 0;
     font-weight:bold;
+    color: #aa66aa ;
+}
+.formBox input
+{
+    margin-bottom: 30px;
+    width: 100%;
 
+}
+.formBox input [type="text"],
+.formBox input [type="password"]
+{
+    border: none;
+    border-bottom: 2px solid #aa66aa;
+    height: 50px;
+    outline: none;
+}
+.formBox input[type="text"]:focus,
+.formBox input[type="password"]:focus
+{
+    border-bottom: 2px solid #262626; 
+}
+.formBox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    background: #262626;
+    cursor: pointer;
+}
+.formBox input[type="submit"]:hover
+{
+    background: #aa66aa;
+}
+.formBox a
+{
+    color: #222222;
+    font-size: 13px;
+    font-weight: bold;
+}
+.formBox button
+{
+    padding: 0;
+    background:blueviolet;
+    height:40px;
+    color:#ffffff;
+    cursor: pointer;
+    width: 100%;
+    font-size: 13px;
+}
+.formBox button:hover{
+    background: #aa66aa;
 }
