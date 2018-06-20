@@ -6,7 +6,17 @@
 
 </head>
 <body>
-
+<script>
+    function toggle_div(id)  {
+        var x = document.getElementById("nav");
+        if (x.style.display === "none")  {
+            x.style.display = "block";
+        }
+        else {
+            x.style.display="none";
+        }
+    }
+</script>
     <header>
         <a class="header-brand">Maintenence tracker</a>
             <nav>
@@ -14,28 +24,38 @@
                         <li class="active"><a>Admin</a></li>
                         <li><a>About</a></li>
                         <li><a>FAQs</a></li>
-                        <li><a href="admins.html">test</a></li>
                         <li style="float:right" border-radius:"100px" ><a href="index.html">Home</a></li>
                     </ul>
                 </nav>
+    
+                <div class="mobile"></div>
+    <div id="container">
         <div class="sidebar">
-            <ul id = "nav">
-                    <div class="dropdown">
-                            <button onclick="myfunction()" class="dropbtn">Requests</button>
-                            <div id="myFunction()" class="dropdown-content">
-                <a href="#">Request Details</a>
-               <a href="#">Approved Requests</a>
-               <a href="#">Disapproved Requests</a>
-                            </ul>
-</div>
-</div>
-                            </div>
+    
+            <ul id="nav">
+                <li><a href="#" onclick="toggleDisplay()">App Request</a></li>
+                <li><a href="#">request details</a></li>
+                <li><a href="#">Approve/disapprove requests</a></li>
+                <li><a href="#">Resolve requests</a></li>
+            </ul>
+            </div>
+            <div class="content">
+                 <h1>requests</h1>
+                 <p> Here u can see requests</p>
+                 <div id ="box">
+                     <div class="box-top">User requests </div>
+                     <div class="box-panel">numbered from 1 </div>
+                 </div>
+                 <div id ="box">
+                        <div class="box-top">User requests </div>
+                        <div class="box-panel">numbered from 1 </div>
+                    </div>
+                    <div id ="box">
+                            <div class="box-top">User requests </div>
+                            <div class="box-panel">numbered from 1 </div>
+                        </div>
+            </div>
+            </div>
+            </header>
+
             
-        
-        </div>
-        <div class="content">
-            
-        </div>
-    </header>
-    <main>
-        <section>
