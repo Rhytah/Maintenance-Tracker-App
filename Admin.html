@@ -6,56 +6,100 @@
 
 </head>
 <body>
-<script>
-    function toggle_div(id)  {
-        var x = document.getElementById("nav");
-        if (x.style.display === "none")  {
-            x.style.display = "block";
+  <script>
+/*display sign up on click*/
+    function create(a) {
+        if (a.style.display === "none"){
+            a.style.display = "block";
+        }else {
+            a.style.display = "none";
         }
-        else {
-            x.style.display="none";
-        }
+        
     }
-</script>
+    </script>
     <header>
-        <a class="header-brand">Maintenence tracker</a>
+       
             <nav>
-                    <ul>
-                        <li class="active"><a>Admin</a></li>
-                        <li><a>About</a></li>
-                        <li><a>FAQs</a></li>
-                        <li style="float:right" border-radius:"100px" ><a href="index.html">Home</a></li>
+                    <logo> <img src="itsupport.png" alt="" height="120px"></logo>
+                    <ul style="float:right">
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li class="active"><a >Admin</a></li>
+                        
                     </ul>
                 </nav>
+                <img src="User_Gear_Cog_Configure_Control_Manage_Management-512.png" height="100" style="float:right;">
+    </header>
     
-                <div class="mobile"></div>
-    <div id="container">
-        <div class="sidebar">
-    
-            <ul id="nav">
-                <li><a href="#" onclick="toggleDisplay()">App Request</a></li>
-                <li><a href="#">request details</a></li>
-                <li><a href="#">Approve/disapprove requests</a></li>
-                <li><a href="#">Resolve requests</a></li>
-            </ul>
+        <div class="container" id="ViewRequests"><th colspan="4" cellpadding="2" cellspacing="3"></th><h2> App Requests</h2>
+            <table align="center" border="5">
+               
+                <thead> 
+                    <tr>
+                    <th>Request</th>
+                    <th>Particulars</th>
+                    <th>Request Date</th>
+                    <th>Requested by</th>
+                    <th>Department</th>
+                     <th>Approve / Reject</th>
+                     <th>Status</th>
+                    </tr>
+                    </thead>
+                        
+                    <tbody>
+                  <tr>
+                    <td>Fix monitor</td>
+                    <td>Monitor has cracks that obstruct view</td>
+                    <td class="Date">02/06/2017</td>
+                    <td>Marie</td>
+                    <td>Sales</td>
+                    <td>Approved</td>
+                    <td>Resolved</td>
+                     </tr>                     
+                   <tr>
+                    <td>Unstable UPS replacement</td>
+                    <td>UPS keeps going off and on </td>
+                    <td class="Date">03/08/2017</td>
+                    <td>Matovu</td>
+                    <td>Finacial</td>
+                    <td>Approved</td>
+                    <td>Resolved</td>
+                     </tr>
+                    <tr>
+                    <td>Replace faulty network cable</td>
+                    <td>Cable appears bitten by rats and cannot maintain a stable connection</td>
+                    <td class="Date">11/01/2018</td>
+                    <td>John</td>
+                    <td>Sales</td>
+                    <td>Approved</td>
+                    <td>Resolved</td>
+                      </tr>
+                <tr>
+                    <td>Replace entire computer system</td>
+                    <td>System seems outdated </td>
+                    <td class="Date">09/03/2018</td>
+                    <td>Jane</td>
+                    <td>Marketing</td>
+                    <td>Rejected</td>
+                    <td>Resolved</td>
+                      </tr>
+                 <tr>
+                    <td>Get a web camera</td>
+                    <td>Need a camera to make skype calls</td>
+                    <td class="Date">15/05/2018</td>
+                    <td>Marie</td>
+                    <td> Sales</td>
+                    <td>Pending</td>
+                    <td>Pending</td>
+                        </tr>
+                        <tr></tr>
+                                           </tbody>
+                
+            </table>
             </div>
-            <div class="content">
-                 <h1>requests</h1>
-                 <p> Here u can see requests</p>
-                 <div id ="box">
-                     <div class="box-top">User requests </div>
-                     <div class="box-panel">numbered from 1 </div>
-                 </div>
-                 <div id ="box">
-                        <div class="box-top">User requests </div>
-                        <div class="box-panel">numbered from 1 </div>
-                    </div>
-                    <div id ="box">
-                            <div class="box-top">User requests </div>
-                            <div class="box-panel">numbered from 1 </div>
-                        </div>
-            </div>
-            </div>
-            </header>
+        </section>
+</body>
+</html>
 
             

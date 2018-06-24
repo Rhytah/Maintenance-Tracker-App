@@ -1,13 +1,13 @@
 
 body
 {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: url(blue-ink-drop-water-white-footage-070754000_prevstill.jpeg);
     background-size: cover;
     font-family: sans-serif;
     box-sizing: border-box;
-    size: inherit;
+    
 }
 p
 {
@@ -15,17 +15,23 @@ p
     font-size: 24px;
     font-weight:bold;
 }
-
+h1
+{
+    font-size: 18px;
+    font-size: sans-serif;
+    color: blue;
+    position: center;
+}
 /*header*/
 header
 {
-    background:#3e5d75;
+    background:#0b4b7c;
     width:100%;
-    height: 150px;
+    height: 120px;
 }
 header .header-brand{
     font-family:  sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     color: wheat;
     font-weight: bold;
     text-transform: uppercase;
@@ -62,8 +68,8 @@ a
 }
 header nav li a
 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-family: sans-serif;
+    font-size: 20px;
     color: wheat;
     font-weight: bold;
     display: block;
@@ -87,6 +93,8 @@ header nav li a:hover
 {
     text-align: center;
     padding: 50px 0 20px;
+    
+
 }
 .title h1
 {
@@ -94,18 +102,18 @@ header nav li a:hover
     padding: 0;
     color: #3e5d75;
     text-transform: uppercase;
-    font-size:35px;
+    font-size: 15px;
 }
 
 .container
 {
     width:50%;
-    height:500px;
-    background: #370a4496;
-    margin:0 auto;
+    height:405spx;
+    background: #0a18445b;
+    margin:  100px 100px;
     border: 2px solid #ffffff69;
     box-shadow: 0 15px 40px rgba(0, 2, 0, .8);
-    position: relative;
+    position: center;
     display: inline-block;
 }
 
@@ -113,16 +121,16 @@ header nav li a:hover
 {
     float: left;
     width: 50%;
-    height: 500px;
-    background:center   url(Andela.jpg);
-    background-size:fit;
+    height: 400px;
+    background:center url(Andela.jpg);
+    background-size: fit;
     box-sizing: border-box;
 }
 .container .right
 {
     float: right;
     width: 50%;
-    height: 500px;
+    height: 400px;
     box-sizing: border-box;
     background: none;
 
@@ -133,7 +141,7 @@ header nav li a:hover
     width: 100%;
     padding: 80px 40px;
     box-sizing: border-box;
-    height:600px;
+    height:400px;
     background: #ffffff69;
     position: relative;
   
@@ -143,26 +151,31 @@ header nav li a:hover
     margin: auto;
     padding: 2px;
     font-weight:bold;
-    font-size:20px;
+    font-size: 18px;
     color: #201420 ;
 }
 .formBox input
 {
     margin-bottom: 30px;
     width: 100%;
-
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #262626;
 }
 .formBox input [type="text"],
 .formBox input [type="password"]
 {
     border: none;
-    border-bottom: 2px solid #180f18;
-    height: 50px;
+    border-bottom: 2px solid #201420;
+    height: 100px;
     outline: none;
+    
 }
 .formBox input[type="text"]:focus,
 .formBox input[type="password"]:focus
 {
+    
     border-bottom: 2px solid #262626; 
 }
 .formBox input[type="submit"]
@@ -181,7 +194,7 @@ header nav li a:hover
 .formBox a
 {
     color: #222222;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 .formBox button
@@ -197,6 +210,10 @@ header nav li a:hover
 .formBox button:hover{
     background: #bb94b1;
 }
+#signUp
+{
+    display: none;
+}
 /*admin*/
 .sidebar
 {
@@ -206,6 +223,7 @@ header nav li a:hover
    float: left; 
 
 }
+
 /*navigation within admin*/
 ul#nav
 {
@@ -238,6 +256,7 @@ ul#nav li a:hover
     background-color: whitesmoke;
     padding: 15px;
     margin-left: 250px;
+    display: none;
 }
 .content p
 {
@@ -300,4 +319,75 @@ div#box .box-panel
 .show
 {
     display:block;
+}
+/*table styling user*/
+.container #ViewRequests
+{
+    height: auto;
+    width: 90%;
+    box-sizing: border-box;
+}
+#ViewRequests 
+{
+    width: 90%;
+    padding-left: 0.8rem;
+}
+table
+{
+    padding: 0 02px;
+    border: 1px solid #1C6EA4;
+    background-color: rgba(238, 238, 238, 0.103);
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    display: inline-table;
+    font-size: 18px;
+}
+table td th
+{
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+    color: navy;
+    font-weight: bold;
+}
+table  tbody td
+{
+    font-size: 18px;
+    color: #1a1b63;
+}
+/*create request*/
+
+#CreateRequest
+{
+    display: inline-block;
+    width: 90%;
+    font-size: 18px;
+    padding: 6px;
+}
+#CreateRequest form, p
+{
+    padding: 2px auto;
+    margin: 0;
+    width: 50%;
+    color: #223750;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.form input
+{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #262626;
+}
+/*about page*/
+#about
+{
+    width: 90%;
+    padding: 0px;
+    background-color:rgb(52, 103, 212);
+
 }

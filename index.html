@@ -7,27 +7,36 @@
 
 </head>
 <h1>
-    Welcome to the tracker
+
 </h1>
 <body>
     <header>
-        <a class="header-brand">Maintenence tracker</a>
+        
+
             <nav>
-                    <ul>
+                <logo> <img src="itsupport.png" alt="" height="120px"></logo>
+                    <ul style="float:right;">
                         <li class="active"><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>FAQs</a></li>
-                        <li style="float:right" border-radius:"100px" ><a href="admin.html">Your profile</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                      <!--  <li style="float:right" border-radius:"100px" ><a href="admin.html">Your profile</a></li> -->
                     </ul>
                 </nav>
     </header>
     <main>
         <section>
-            
-        </section>
-    </main>
-    <div class="title"><h1>Sign in form </h1></div>
-    <div class ="container">
+            <script>
+            /*display sign up on click*/
+                function sform(a) {
+           if (a == 1)
+               document.getElementById("SignUp").style.display = "block";
+       }
+            </script>
+        
+    
+    <div class ="container" id="SignIn">
+        <h1>Sign in here </h1>
         <div class="left"></div>
         <div class="right">
         <div class="formBox">
@@ -41,13 +50,35 @@
                 <a href="user.html" type="submit" name=" " value= "SignIn">SignIn</a> -->
                 <button><a href="user.html">Sign In</a></button>
                 <br>
-                
-                <p class="message" align="center">Not Registered? <a href="SignUp.html">Sign Up</a></p>
+                <a href="#SignUp" onclick="sform(1)" >Don't have an account?</a>
                 
 
             </form>
             </div>
         </div>
     </div>
+   
+        <div class ="container" id="SignUp">
+         
+        <div class="title"><h1>SignUp form </h1></div>   
+        <div class="left"></div>
+            <div class="right">
+            <div class="formBox">
+                <form>
+                    <p>First name</p>
+                    <input type ="text" name="" placeholder="First name">
+                    <p>Last name</p>
+                    <input type ="text" name="" placeholder="Last name">
+                    <p>Email</p>
+                    <input type="text" name="" placeholder="Email">
+                    <p>Password</p>
+                    <input type="Password" name="" placeholder="******">
+                  <input type ="submit" name="" value="SignUp">
+                </form>
+                </div>
+            </div>
+        </div> 
+    </div></section>
+    </main>
 </body>
 </html>
