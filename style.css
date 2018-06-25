@@ -2,7 +2,7 @@
 body
 {
     margin: 0 auto;
-    padding: 0;
+    padding: 2px  8px;
     background: url(blue-ink-drop-water-white-footage-070754000_prevstill.jpeg);
     background-size: cover;
     font-family: sans-serif;
@@ -332,28 +332,61 @@ div#box .box-panel
     width: 90%;
     padding-left: 0.8rem;
 }
-table
+#myData
+{
+    padding: 12px 20px 12px 40px;
+    
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    height: 30px;
+    width: 40%;
+    background-color: rgba(252, 252, 252, 0.781);
+    margin-bottom: 12px;
+}
+#Requests
 {
     padding: 0 02px;
-    border: 1px solid #1C6EA4;
+   /* border: 1px solid #1C6EA4;*/
     background-color: rgba(238, 238, 238, 0.103);
-    width: 100%;
-    text-align: left;
+    width: fit-content;
+    border: 2px solid #1a015e;
     border-collapse: collapse;
     display: inline-table;
     font-size: 18px;
+    box-sizing: border-box;
 }
-table td th
+#Requests td th
 {
     border: 1px solid #AAAAAA;
     padding: 3px 2px;
     color: navy;
     font-weight: bold;
+    text-align: auto;
+    border-bottom-color: #2438045b;
 }
-table  tbody td
+#Requests tbody td
 {
     font-size: 18px;
     color: #1a1b63;
+    border: 1px solid #0b4b7c;
+
+}
+table #Approve
+{
+    font-size: 20px;
+    cursor: pointer;
+    user-select: contain;
+}
+fa 
+{
+    font:sans-serif;
+}
+fa:hover
+{
+    color: rgb(1, 1, 29)10, 68);
+    align-self: center;
+    height: 30px;
 }
 /*create request*/
 
@@ -377,6 +410,7 @@ table  tbody td
 .form input
 {
     margin-bottom: 30px;
+    background-image: url('/css/searchicon.png');
     width: 100%;
     height: 40px;
     font-size: 18px;

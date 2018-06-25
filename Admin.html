@@ -3,20 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body>
-  <script>
-/*display sign up on click*/
-    function create(a) {
-        if (a.style.display === "none"){
-            a.style.display = "block";
-        }else {
-            a.style.display = "none";
-        }
-        
-    }
-    </script>
+
     <header>
        
             <nav>
@@ -32,17 +24,19 @@
                 <img src="User_Gear_Cog_Configure_Control_Manage_Management-512.png" height="100" style="float:right;">
     </header>
     
-        <div class="container" id="ViewRequests"><th colspan="4" cellpadding="2" cellspacing="3"></th><h2> App Requests</h2>
-            <table align="center" border="5">
+       <!-- <div  id="ViewRequests"></div><th colspan="7" cellpadding="2" cellspacing="3"></th> -->
+        <h2> App Requests</h2>
+            <input style="float: right;" height="100px" type="text" id="myData" onkeyup="fSearch()" placeholder="Filter Requests........." title="type in a request">
+            <table id="Requests" align="center" border="5" >
                
                 <thead> 
-                    <tr>
+                    <tr class="header">
                     <th>Request</th>
                     <th>Particulars</th>
                     <th>Request Date</th>
                     <th>Requested by</th>
                     <th>Department</th>
-                     <th>Approve / Reject</th>
+                     <th >Approve / Reject</th>
                      <th>Status</th>
                     </tr>
                     </thead>
@@ -54,7 +48,7 @@
                     <td class="Date">02/06/2017</td>
                     <td>Marie</td>
                     <td>Sales</td>
-                    <td>Approved</td>
+                    <td id="Approve"><i class="fa fa-thumbs-down">Reject</i></td>
                     <td>Resolved</td>
                      </tr>                     
                    <tr>
@@ -63,7 +57,7 @@
                     <td class="Date">03/08/2017</td>
                     <td>Matovu</td>
                     <td>Finacial</td>
-                    <td>Approved</td>
+                    <td id="Approve"><i class="fa fa-thumbs-up">Approve</i></td>
                     <td>Resolved</td>
                      </tr>
                     <tr>
@@ -72,7 +66,7 @@
                     <td class="Date">11/01/2018</td>
                     <td>John</td>
                     <td>Sales</td>
-                    <td>Approved</td>
+                    <td id="Approve"><i class="fa fa-thumbs-up">Approve</i></td>
                     <td>Resolved</td>
                       </tr>
                 <tr>
@@ -81,7 +75,9 @@
                     <td class="Date">09/03/2018</td>
                     <td>Jane</td>
                     <td>Marketing</td>
-                    <td>Rejected</td>
+                           
+                    <td id="Approve"><i class="fa fa-thumbs-down">Reject</i></td>
+
                     <td>Resolved</td>
                       </tr>
                  <tr>
@@ -90,15 +86,42 @@
                     <td class="Date">15/05/2018</td>
                     <td>Marie</td>
                     <td> Sales</td>
-                    <td>Pending</td>
+                    <td id="Approve"><i onclick="approve(this)" class="fa fa-thumbs-up">Pending</i></td>
                     <td>Pending</td>
                         </tr>
                         <tr></tr>
                                            </tbody>
                 
-            </table>
-            </div>
-        </section>
+           
+                                        </table>
+ <script>
+/*filter/search*/
+    function fSearch()
+{
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("myData");
+    filter = input.nodeValue.toUpperCase();
+    table = document.getElementById("Requests");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++)
+    {
+        td=tr[i].getElementsByTagName("td") [0];
+        if (td){
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1){
+                tr[i].style.display ="";
+            } else{
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+function approve(x)
+{
+    x.classList.toggle("fa-thumbs-down");
+}
+    </script>
+            <!-- </div> -->
+       
 </body>
 </html>
 
