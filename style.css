@@ -384,7 +384,7 @@ fa
 }
 fa:hover
 {
-    color: rgb(1, 1, 29)10, 68);
+    color: rgb(1, 1, 29, 68) ;
     align-self: center;
     height: 30px;
 }
